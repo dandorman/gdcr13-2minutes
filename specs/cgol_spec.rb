@@ -20,6 +20,10 @@ describe Board do
         board = Board.new([[0,0]])
         board.cell_is_alive?([0,0]).should eq(true)
     end
+    it 'should count living cells from a list of locations' do
+        board = Board.new([[0,0]])
+        board.count_living_cells([[0,0]]).should eq(1)
+    end
 end
 
 
