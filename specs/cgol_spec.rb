@@ -16,6 +16,10 @@ describe Board do
         board = Board.new([[0,0]])
         board.cells.count.should eq(1)
     end
+    it 'should have a cell alive that was seeded' do
+        board = Board.new([[0,0]])
+        board.cell_is_alive?([0,0]).should eq(true)
+    end
 end
 
 

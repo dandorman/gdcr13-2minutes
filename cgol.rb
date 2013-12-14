@@ -3,4 +3,7 @@ class Board
     def initialize(seed = [])
         @cells = seed
     end
+    def cell_is_alive?(location)
+        true
+    end
 end
