@@ -28,6 +28,10 @@ describe Board do
         board = Board.new
         board.rel_neighbors.count.should eq(8)
     end
+    it 'should have eight relative neighbors' do
+        board = Board.new
+        board.cell_get_neighbors([0,0]).count.should eq(8)
+    end
 end
 
 

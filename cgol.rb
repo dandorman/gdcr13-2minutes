@@ -8,6 +8,9 @@ class Board
     def cell_is_alive?(location)
         @cells.include? location
     end
+    def cell_get_neighbors(location)
+        @rel_neighbors.map {|delta| [location[0] + delta[0], location[1] + delta[1]]}
+    end
     def count_living_cells(locations)
         (locations.select {|location| cell_is_alive? location}).size
     end
