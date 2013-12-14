@@ -24,6 +24,10 @@ describe Board do
         board = Board.new([[0,0]])
         board.count_living_cells([[0,0]]).should eq(1)
     end
+    it 'should have eight relative neighbors' do
+        board = Board.new
+        board.rel_neighbors.count.should eq(8)
+    end
 end
 
 
