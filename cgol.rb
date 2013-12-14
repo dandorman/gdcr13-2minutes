@@ -7,7 +7,6 @@ class Board
         @cells.include? location
     end
     def count_living_cells(locations)
-        #a = locations.select {|location| @cell_is_alive? location}
-        1
+        (locations.select {|location| cell_is_alive? location}).size
     end
 end
