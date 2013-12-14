@@ -1,6 +1,6 @@
 require_relative '../cgol'
 
-describe  do
+describe Board do
     it 'should pass' do
         true.should eq(true)
     end
