@@ -3,7 +3,7 @@ class Board
     attr_accessor :rel_neighbors
     def initialize(seed = [])
         @cells = seed
-        @rel_neighbors = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]
+        @rel_neighbors = [[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,0],[1,-1],[1,1]]
     end
     def cell_is_alive?(location)
         @cells.include? location
