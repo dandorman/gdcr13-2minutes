@@ -1,6 +1,6 @@
 class Board
     attr_accessor :cells
     def initialize(seed = [])
-        @cells = []
+        @cells = seed
     end
 end
