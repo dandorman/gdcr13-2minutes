@@ -4,6 +4,6 @@ class Board
         @cells = seed
     end
     def cell_is_alive?(location)
-        true
+        @cells.include? location
     end
 end
