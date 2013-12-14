@@ -1,5 +1,5 @@
 class Board
-    attr_reader :cells
+    attr_accessor :cells
     def init
         @cells = []
     end
